@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Breaking news</title>
+<title>Instruccions</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
@@ -54,7 +54,7 @@ function validateForm() {
 }
 function validateForm2() {
   let x = document.forms["myForm2"]["loc"].value;
-  if (x.toLowerCase().replace(/'/g,'').replace(/‘/g,'') == "el camp de larpa del clot") {
+  if (x.toLowerCase().replace(/'/g,'').replace(/[\u2018\u2019]/g,'') == "el camp de larpa del clot") {
     window.location.href = "paquet.html";
     return false;
   } else {
