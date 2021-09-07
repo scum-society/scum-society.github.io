@@ -54,6 +54,15 @@ p{
   color: greenyellow;
   text-align: left;
 }
+p .center {
+	margin:0;
+  font-weight: bold;
+  margin: 0.5em 0;
+  font-family: monospace;  
+  color: greenyellow;
+  text-align: center;
+}
+
 ul{
 	margin:0;
 	padding:0;
@@ -61,6 +70,7 @@ ul{
 
 .center {
   padding: auto;
+  text-align: center;
 }
 
 .button {

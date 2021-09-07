@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Breaking news</title>
+<title>Missatge</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
@@ -14,26 +14,15 @@
 </head>
 <body>
 <div class="agileits-content" id="Main-Content">
-	<h1>Instruccions</h1>
+	<h1>T'ESTIMOO!!</h1>
   <div class="col-xs-1"></div>
   <div class="col-xs-10">
-    <p> 1. Primer hauràs de desxifrar el missatge amagat a la foto. </p>
-    <img src="media/message.jpg" width="50%">
-    <p> 2. Si l'introdueixes correctament obtindràs unes coordenades. </p>
-    <form name="myForm" action="#" onsubmit="return validateForm()" method="POST">
-      <input type="text" id="msg" name="msg">
-      <input type="submit" value="Entra">
-    </form>
-    <p> 3. Hauràs de dirigir-te a la següent localització. </p>
-      <div id="coords" style="visibility:hidden;">
-        <p style="text-align:center">41° 24' 41.04576", <br>  2° 11' 8.85072"</p>
-      </div>
-    <p> 4. A quin barri has arribat? Introdeix el nom i obtindràs la resta d'instruccions. </p>
-    <form name="myForm2" action="#" onsubmit="return validateForm2()" method="POST">
-      <input type="text" id="loc" name="loc">
-      <input type="submit" value="Entra">
-    </form>
-   </p>
+    <p class="center"> M'hagés agradat poder tocar i cantar-te alhora (o com a mínim saber fer servir l'autotune) </p>
+    <p class="center"> Però de moment aquest és el nivell.</p>
+    <audio controls>
+      <source src="media/LaQuieroAMorir.mp3" type="audio/mpeg">
+    </audio>
+    <p class="center"> Espero que t'hagi agradat tot (aquest audio <b>només</b> el pots escoltar tu) </p>
   </div>
   <div class="col-xs-1"></div>
 </div>
@@ -54,11 +43,11 @@ function validateForm() {
 }
 function validateForm2() {
   let x = document.forms["myForm2"]["loc"].value;
-  if (x.toLowerCase() == "El Camp de l'Arpa de Clot") {
-    window.location.href = "paquet.html";
+  if (x.toLowerCase() == "glories") {
+    window.location.href = "http://www.w3schools.com";
     return false;
   } else {
-    alert("Incorrecte (introdueix el nom oficial, tal com ho fa l'ajuntament de barcelona)");
+    alert("Incorrecte");
     return false;
   }
   
